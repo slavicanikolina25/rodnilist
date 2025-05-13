@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rodni list</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border: 3px solid goldenrod;
+            padding: 30px;
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        td, th {
+            border: 1px solid #999;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            padding: 5px;
+        }
+
+        .no-border {
+            border: none;
+        }
+
+        .napomena {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 30px;
+        }
+
+        .footer td {
+            border: none;
+            padding-top: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <p><strong>BOSNA I HERCEGOVINA</strong><br>
+            FEDERACIJA BOSNE I HERCEGOVINE<br>
+            KANTON <input type="text" name="kanton" style="width: 200px; border-bottom: 1px solid #000;"> <br>
+            OPĆINA/GRAD <input type="text" name="opcina" style="width: 200px; border-bottom: 1px solid #000;"></p>
+        </div>
+
+        <h2>IZVOD IZ MATIČNE KNJIGE ROĐENIH</h2>
+
+        <table>
+            <tr>
+                <td>Prezime</td>
+                <td><input type="text" name="prezime"></td>
+                <td>Spol</td>
+                <td><input type="text" name="spol"></td>
+            </tr>
+            <tr>
+                <td>Ime</td>
+                <td colspan="3"><input type="text" name="ime"></td>
+            </tr>
+            <tr>
+                <td>Datum i vrijeme rođenja</td>
+                <td><input type="text" name="datumvrijeme" ></td>
+                <td>Mjesto i općina rođenja</td>
+                <td><input type="text" name="mjesto"></td>
+            </tr>
+            <tr>
+                <td>Država rođenja</td>
+                <td><input type="text" name="drzava"></td>
+                <td>JMBG</td>
+                <td><input type="text" name="jmbg"></td>
+            </tr>
+            <tr>
+                <td>Državljanstvo</td>
+                <td><input type="text" name="drzavljanstvo"></td>
+                <td>Nacionalnost</td>
+                <td><input type="text" name="nacionalnost"></td>
+            </tr>
+            <tr>
+                <td>Prebivalište</td>
+                <td colspan="3"><input type="text" name="prebivaliste"></td>
+            </tr>
+        </table>
+
+        <h3>Podaci o roditeljima</h3>
+
+        <table>
+            <tr>
+                <td class="no-border"></td>
+                <th>Otac</th>
+                <th>Majka</th>
+            </tr>
+            <tr>
+                <td>Prezime</td>
+                <td><input type="text" name="prezime_otac"></td>
+                <td><input type="text" name="prezime_majka"></td>
+            </tr>
+            <tr>
+                <td>Ime</td>
+                <td><input type="text" name="ime_otac"></td>
+                <td><input type="text" name="ime_majka"></td>
+            </tr>
+            <tr>
+                <td>Djevojačko prezime majke</td>
+                <td><input type="text" name="djevojacko_otac"></td>
+                <td><input type="text" name="djevojacko_majka"></td>
+            </tr>
+            <tr>
+                <td>JMBG</td>
+                <td><input type="text" name="jmbg_otac"></td>
+                <td><input type="text" name="jmbg_majka"></td>
+            </tr>
+        </table>
+
+        <p class="napomena">
+            <strong>Napomena:</strong> Ovaj izvod iz matične knjige rođenih nema ograničen rok važenja.<br>
+            Odgovornost za točnost podataka snosi lice koje koristi izvod u pravne svrhe.
+        </p>
+
+        <table class="footer">
+            <tr>
+                <td>Broj:<br><input type="text" name="broj"></td>
+                <td>Datum:<br><input type="text" name="datum"></td>
+                <td>Matičar:<br><input type="text" name="maticar"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
